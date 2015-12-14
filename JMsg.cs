@@ -48,6 +48,21 @@ public class JMsg  {
 		msgDict [obj].Remove (action);
 	}
 
+	public void RemoveMsg<T>(object obj,Action<T> action){
+		if (msgDict.ContainsKey (obj) == false) {
+			return;
+		}
+		msgDict [obj].Remove (action);
+	}
+
+	public void RemoveMsg<T1,T2>(object obj,Action<T1,T2> action){
+		if (msgDict.ContainsKey (obj) == false) {
+			return;
+		}
+		msgDict [obj].Remove (action);
+	}
+
+
 	public void SendMsg(object obj){
 		if (msgDict.ContainsKey (obj) == false) {
 			return;
