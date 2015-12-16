@@ -24,6 +24,7 @@ public class JMsg  {
 		if (msgDict.ContainsKey (obj) == false) {
 			msgDict [obj] = new List<object> ();
 		}
+		if(msgDict [obj].Contains(action)==false)
 		msgDict [obj].Add (action);
 	}
 
@@ -31,6 +32,7 @@ public class JMsg  {
 		if (msgDict.ContainsKey (obj) == false) {
 			msgDict [obj] = new List<object> ();
 		}
+		if(msgDict [obj].Contains(action)==false)
 		msgDict [obj].Add (action);
 	}
 
@@ -38,6 +40,7 @@ public class JMsg  {
 		if (msgDict.ContainsKey (obj) == false) {
 			msgDict [obj] = new List<object> ();
 		}
+		if(msgDict [obj].Contains(action)==false)
 		msgDict [obj].Add (action);
 	}
 
